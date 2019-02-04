@@ -231,11 +231,64 @@ def team_14_adv():
 
 #########################################################################################################
 # Trent and Dustin
-# Refactored by Team 15:                 #TODO Team 15 names here
-# Google doc link:                       #TODO Team 15 Google doc link here
+# Refactored by Team 15:                 #Berry and Shageldi
+# Google doc link:                       #https://docs.google.com/document/d/1yXHOnHFfDayAnZKOiCnmYifJoW4TApZGKln6v9fuHyM/edit?usp=sharing
 def team_15_adv():
     pass
-    # TODO Add your code here
+
+    print("\nThis is your captain speaking\n")
+    sleep(delay * 2)
+    print(
+        "We are rapidly losing altitude and cabin pressure is becoming unstable.Please follow all safety guidelines \
+        and.")
+    sleep(delay * 5)
+    print("---")
+    sleep(delay)
+    print(
+        "~Everything goes dark. "
+        "What was supposed to be an exciting vacation to the Caribbean has\n turned into a nightmare~")
+    sleep(delay)
+    print("---")
+    sleep(delay * 3)
+    print("~You finally come to, but everything is still dark~")
+    sleep(delay)
+    print("---")
+    sleep(delay * 3)
+    print("~A shaky voice can be heard in the distance~\n")
+    sleep(delay * 3)
+    print("  HELLOOO... Is anyone else out here?")
+    sleep(delay * 2)
+    print("---")
+
+    choice1 = input("~What do you want to do~ [call out/remain silent] ")
+    sleep(delay)
+    if choice1 == "call out":
+        print("---")
+        sleep(delay * 2)
+        print("  Sunlight floods in as David, another survivor,\n  lifts debris from the crash off of you")
+        print("---")
+        sleep(delay * 2)
+        choice2 = input("what do you and david choose to do? [explore the island/create sos signal]")
+        if choice2 == "explore the island":
+            print("---")
+            sleep(delay * 2)
+            dead = True
+        elif choice2 == "create sos signal":
+            print("---")
+            sleep(delay * 2)
+            rescued = True
+    elif choice1 == "remain silent":
+        print("---")
+        sleep(delay * 2)
+        print("~you wait a while until you are sure the person the voice belonged to is gone~")
+        sleep(delay)
+        print("~you realise that you are pinned down by something big, and can't get out.\nYou die")
+    else:
+        print("you remain alone walking the beaches of the island")
+    if dead == True:
+        print("You stepped on a deadly coral snake and die.\nDavid is left to survive on the island alone")
+    if rescued == True:
+        print("A helicopter spots the sos sign and rescues you")
 
 
 #########################################################################################################
