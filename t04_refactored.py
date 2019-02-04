@@ -190,6 +190,46 @@ def team_9_adv():
 # Google doc link:                       #TODO Team 10 Google doc link here
 def team_10_adv():
     pass
+    # Nicole and Eleni
+    # Refactored by Team 10
+
+    print()
+    print("Welcome, " + username + ",to Las Vegas.")
+    sleep(delay)
+    print("We are at Omnia, a club in Las Vegas. A tall, blond, man comes in holding an AK47 gun in his right hand.")
+    sleep(delay * 2)
+    print("Everyone is panicked, your friend Erica freaks out and decides to hide under the table.")
+    sleep(delay * 2)
+    print("You are standing on the other side of the room. The door is located really close to you.")
+    print()
+    sleep(delay * 2)
+    print("You have 3 options")
+    sleep(delay * 2)
+    print("Run Away, Hide with your friend, or Fight for your life")
+    print()
+    sleep(delay)
+
+    Choice = input("What did you decide to do? [Run/Hide/Fight]")
+
+    if Choice == "Run":
+        # Safe Choice
+        print('You are safe!')  # Safe option
+        sleep(delay * 2)
+    elif Choice == "Hide":
+        # Correct options
+        print("The story continues. You survived!")
+        sleep(delay * 2)
+    elif Choice == "Fight":
+        # Wrong Choice
+        print("You are dead! Sorry :( ")
+        sleep(delay * 2)
+        dead = True
+
+
+
+    else:
+        print("You were not able to do that.")
+
     # TODO Add your code here
 
 
