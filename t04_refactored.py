@@ -206,7 +206,62 @@ def team_11_adv():
 # Sandesh
 # Refactored by Team 12:                 #TODO Team 12 names here
 # Google doc link:                       #TODO Team 12 Google doc link here
+
+    # Sandesh
+    # Refactored by Team 12
 def team_12_adv():
+    print("The further you go the colder the cave seems to get.")
+    print("In the distance you can hear a muted *splat* *splat* sound of water droplets hitting the cave floor.")
+    print(
+        "A chill runs down your back, as you realize that the cave is becoming darker and darker the further you go in.")
+    print("...\n")
+    for i in range(3):
+        sleep(delay)
+    print("The cave seems to be more menacing now and your senses are on high alert.")
+    print("A rivulet of sweat trickles down your back despite the chill of the cave.")
+    print("Your ears are filled with the sound of your ever increasing heart beat ")
+    print("and the tentative slap of your feet against the cave floor as you slowly make your way forward.")
+    print("...\n")
+    sleep(delay)
+    sleep(delay)
+    sleep(delay)
+    print("Your slow march comes to a sudden end as you spot a figure of shadow in front of you.")
+    print("The figure, no the monster seems to be coming closer. You can either run away, charge the monster, or hide")
+
+    choice2 = input("What do you decide to do? (run, charge, hide)")
+
+    if choice2 == "run":
+        print("You turn in the other direction and run as fast as you can with no thought of where you are heading.")
+        sleep(delay)
+        sleep(delay)
+        print("You finally stop and catch your breath. The monster had not followed you.")
+        print("You are completely lost but at least there are no monsters near you, hopefully.")
+
+    elif choice2 == "charge":
+        print("You may be scared but you are not a coward")
+        print("Throwing caution to the wind, you sprint towards the monster as fast as you can, ")
+        print("shouting at the top of your lungs")
+        sleep(delay)
+        print("All of a sudden the ground below you drops and you tumble down.")
+        print("As you fall you hit your head on the rock multiple times.")
+        print("You reach the bottom of the slope with you head busted open.\n")
+        sleep(delay)
+        print("YOU HAVE DIED!")
+        dead = True
+
+    else:
+        print("You press your self against the nearest indent in the cave wall")
+        print("hoping that the darkness of the cave would be enough to hide you.")
+        print("Minutes pass and you begin to calm down.")
+        print("After a minute or two you begin to realize that the monster was not there anymore.")
+        print("You realize that the monster was never there to begin with. ")
+        print("You realize that the monster was just a figment of your flustered imagination.")
+        sleep(delay)
+        sleep(delay)
+        print("You decide to continue on.")
+        print("After a while of walking the ground begins to slop downwards.")
+        print("at the bottom of the slope you see a faint light")
+
     pass
     # TODO Add your code here
 
