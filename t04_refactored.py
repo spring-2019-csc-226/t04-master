@@ -171,8 +171,60 @@ def team_7_adv():
 # Refactored by Team 8:                 #TODO Team 8 names here
 # Google doc link:                      #TODO Team 8 Google doc link here
 def team_8_adv():
-    pass
-    # TODO Add your code here
+
+    # A Haunted house with four doors and each doors leads to different destination
+    print()
+    print("You are trapped in a haunted house with four doors")
+    print("Some doors will lead you out to go home and others let you to the voracious\n and unmerciful Creatures")
+    print("Each door leads to a different destination, and you have to avoid the evil door in order to stay alive")
+    print()
+
+    direction = input("which door would you like to pass through? [door1/door2/door3/door4]")
+
+    if direction == "door1":
+        # Door1 Oh Nooo.. you just made a bad choice!
+        print("You just opened the evil door .")
+        sleep(delay)
+        print("This door leads to a room filled up with thousands of zombies.")
+        print("It is difficult to survive among these zombies")
+        print("You have no choice than to be eaten up by the zombies")
+        print("Your blood taste like an orange juice, and your flesh taste like a barbecue chicken to the zombies")
+        # Door2 Comprises of good and bad choices
+    elif direction == "door2":
+        print("Wow!!! You have  made a wonderful choice but you have to enter a code  \n on the door")
+        print("There are two codes in front of the door, one among the two codes exits you from the haunted house")
+        print("The other code opens the door for a hungry Snakes into the room")
+        choice = input(' Enter code 1 or 2 on the door locker')
+        x = int(choice)
+        if x == 1:
+            print("You are Lucky!!! Go out and never come back to this area again")
+            print("Congratulations, you survived the haunted house alive")
+        elif x == 2:
+            print("ALERT!! WRONG DOOR!!")
+            print("You just opened the door for two massive python snakes")
+            sleep(delay)
+            print("Say your last words before you find yourselves in our stomachs")
+            print("You are now Dead")
+    # Even or odd number decision keep you alive or dead
+    elif direction == "door4":
+        print("This is the worst door. but there are still options to make towards your survival")
+        print("However in this section you will need to pick a number, "
+              "the right number will extend your chance of living")
+        option = input("enter any number you like")
+        x = int(option) % 2
+        if x == 0:
+            print("You entered an even number which closes the gate, and prevent the deadly animals from entering.")
+            print("However you are still in the room but safer than if you had proceeded with that way.")
+        elif x == 1:
+            print("You entered an odd number")
+            print("The dragon will now feed on you")
+            print(" You are Dead without any further travel!!! ")
+    # The best option to make
+    elif direction == "door3":
+        print(" You are now safe")
+        print("this door automatically get you out of the haunted house")
+        print("Look at that! You made it safe without being killed! ")
+        print("Congratulations... now go play again and explore every other door in the haunted house.")
 
 
 #########################################################################################################
