@@ -150,11 +150,35 @@ def team_5_adv():
 
 #########################################################################################################
 # Karmadri and Lisandro
-# Refactored by Team 6:                 #TODO Team 6 names here
-# Google doc link:                      #TODO Team 6 Google doc link here
+# Refactored by Team 6:                 #TODO Team 6 David Reynoso and Evan Horsley
+# Google doc link:                      #TODO Team 6 https://docs.google.com/document/d/1lVaSKzBsf-wlLdDJVvwkwkA6EALrBiCw4vmcJzR7BYQ/edit?usp=sharing
 def team_6_adv():
-    pass
-    # TODO Add your code here
+
+    direction = input("Which direction would you like to go? {North, South, East, West}")
+
+    if direction == "South":
+        # right choice.
+        print("You locate a stream of water on the floor. Following it could lead you to the exit.")
+        sleep(delay)
+    elif direction == "East":
+        # Wrong choice
+        print("In the darkness, you fail to see a sinkhole that you fall into, never to escape.")
+        # print('')
+        # num = input("Before falling to your doom, you reach out into the darkness and attempt to grab onto the edge."
+        #                  " How far do you extend your arm? (1-90)")
+        # if num < 45:
+        #     print('You did not reach out far enough, therefore you fell to your death.')
+        dead == True
+
+    else:
+        # neutral choice
+        print("You continue your travel but you're as equally confused as you were moments ago.")
+        sleep(delay)
+
+    if dead == True:
+        print ("You are banished to the sinkhole for the rest of your days. Better luck next time!")
+        quit()
+
 
 
 #########################################################################################################
