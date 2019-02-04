@@ -258,11 +258,130 @@ def team_17_adv():
 
 #########################################################################################################
 # Minh and Taran
-# Refactored by Team 18:                 #TODO Team 18 names here
-# Google doc link:                       #TODO Team 18 Google doc link here
+# Refactored by Team 18: Luis and Tabias
+# Google doc link:
+# https://docs.google.com/document/d/1RdhX6OoMjEDKT3oPqSmkpZwPORe1nIQC3vnslmjSrCM/edit?ts=5c58b1af#heading=h.f6tumop9n7at
 def team_18_adv():
-    pass
-    # TODO Add your code here
+    print("")
+    print("You  come across a dungeon armory.")
+    print("the door behinds you lock behinds you as the one in front of you opens. \n")
+    print("what weapon would you like to use from the armory?")
+    print("1. Sword")
+    print("2. Staff")
+    print("3. Bow and Arrow")
+    print("4. bare hands")
+    choice_1 = input()
+    if choice_1 == "1":
+        print("You got an iron sword!!")
+        print("You see yourself as a knight")
+    elif choice_1 == "2":
+        print("You got a wooden staff")
+        print("You feel dark magic around you")
+    elif choice_1 == '3':
+        print("You got bow and 20 arrows")
+        print("you feel weird carrying the bow?")
+    elif choice_1 == '4':
+        print("You just feel weaker than before")
+    else:
+        print("you are kidding me right? You want that?")
+        print("the story teller killed you!!!")
+        dead = True
+
+    choice_2 = input("you entered the dungeon, there are 2 doors to the left and to the right, which will you choose?")
+
+    if choice_2.lower() == 'left':
+        print("you encounter the dark wizard")
+        print("what you going to do?")
+        print("1. hit     2. technique     3. run")
+        fight = input()
+        if fight == '1':
+            print("He use thunderbolt")
+            print("you fried a bit")
+            if choice_1 == '1':
+                print("you swing your sword, cutting him in half")
+            elif choice_1 == '2':
+                print("you beat him continuously with your staff")
+            elif choice_1 == '3':
+                print("you shoot an arrow straight into his heart")
+                print("sadly you aren't cupid")
+            elif choice_1 == '4':
+                print("you punch him to death")
+                print("Who is weak now?")
+            print("He died")
+            print("A chest appears in front of you")
+            print("you open it, gold coming out, you're rich")
+            print("You escape the dungeon and you live a happily life ever after. You died because of old age.")
+            dead = True
+        elif fight == '2':
+            print("you dance your move in front of him, he got mad")
+            print("he use his staff to whack your head")
+            dead = True
+        elif fight == '3':
+            print("you return back to the room")
+            print("you went in the other door")
+            print("You see a beautiful woman sitting on the bed")
+            print("1. flirt       2. 'Attack'  ")
+            choice_3 = input("what will you do?")
+            if choice_3 == '1' or choice_3 == '2':
+                print("she turned into a dragon and ate you")
+                print("you died")
+                dead = True
+
+
+        else:
+            print("you are kidding me right?")
+            print("the story teller killed you!!!")
+            dead = True
+
+    elif choice_2.lower() == "right":
+        print("You see a beautiful woman sitting on the bed")
+        print("1. flirt       2. 'Attack'      3. run ")
+        choice_3 = input("what will you do?")
+        if choice_3 == '1' or choice_3 == '2':
+            print("she turned into a dragon and ate you")
+            print("you died")
+            dead = True
+        elif choice_3 == '3':
+            print("you return to the room")
+            print("you went to the left door")
+            print("you encounter the dark wizard")
+            print("what you going to do?")
+            print("1. hit     2. technique  ")
+            fight = input()
+            if fight == '1':
+                print("He use thunderbolt")
+                print("you fried a bit")
+                if choice_1 == '1':
+                    print("you swing your sword, cutting him in half")
+                elif choice_1 == '2':
+                    print("you beat him continuously with your staff")
+                elif choice_1 == '3':
+                    print("you shoot an arrow straight into his heart")
+                    print("sadly you aren't cupid")
+                elif choice_1 == '4':
+                    print("you punch him to death")
+                    print("whose weak now")
+                print("he died")
+                print("A chest appear in front of you")
+                print("you open it, gold coming out, you're rich")
+                print("You escape the dungeon and you live a happily life ever after. You died because of old")
+                dead = True
+            elif fight == '2':
+                print("you dance your move in front of him, he got mad")
+                print("he use his staff to whack your head")
+                dead = True
+            else:
+                print("you are kidding me right?")
+                print("the story teller killed you!!!")
+                dead = True
+        else:
+            print("you are kidding me right?")
+            print("the story teller killed you!!!")
+            dead = True
+    else:
+        print("you are kidding me right?")
+        print("the story teller killed you!!!")
+        dead = True
 
 
 #########################################################################################################
