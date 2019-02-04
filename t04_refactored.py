@@ -162,6 +162,89 @@ def team_6_adv():
 # Refactored by Team 7:                 #TODO Team 7 names here
 # Google doc link:                      #TODO Team 7 Google doc link here
 def team_7_adv():
+    print("You're walking through a jungle, looking for treasure when suddenly, something hard hits your head"
+          + "and you fall to the ground.\n")
+    sleep(delay * 5)
+    print("When you wake up, you hear dark chanting coming from within the depths of the jungle.")
+    sleep(delay * 2)
+    print(" OO AHH AHH AHH, OO AHH AHH AHH")
+    sleep(delay * 2)
+    print("Looking around, you see a tribe of indians surrounding you and a giant fire in the middle of the circle. "
+          + "The leader walks up to you and asks what your purpose is")
+
+    answer = input("What do you tell him? {Truth/Lie} ")
+    if answer == "Truth":
+        # Bad choice
+        print("'I was sent to look for treasure.'")
+        sleep(delay * 2)
+        print("The tribe of indians get angry and decide they must get rid of you!")
+        print("They pick you up and start heading toward the fire...\n")
+        dead = True
+
+    else:
+        # We lie!
+        print("' I am lost. I am just trying to find my way out of the jungle.'")
+        print("The leader looks at you and tells you he will leave you overnight and decide what to do with you" +
+              " when tomorrow comes.")
+        sleep(delay * 5)
+
+    if dead:
+        print("Oh!! What a horrible way to die. Better luck next time!")
+        quit()
+
+    print("Little does the leader know...")
+    print("You have had a knife in your pocket the whole time")
+    print("While the indians are done with you for the night, you cut yourself free, but hold the ropes" +
+          " so you do not look suspicious.\n")
+    sleep(delay * 3)
+
+    print("You are thinking of ways to escape. You come up with three options: ")
+    print("You can wait until the leader gets close and attack him and fight your way to freedom.")
+    print("You can wait until everyone is asleep and then quietly make your escape.")
+    print(
+        "You can tell the leader that you want to be a part of the tribe and try to figure out your escape from there.\n")
+    sleep(delay)
+
+    option = input("Which option do you choose? [Attack/Wait/Join] ")
+    sleep(delay)
+
+    if option == "Attack":
+        # Bad choice
+        print("You wait until the tribe leader walks in front of you and then...")
+        sleep(delay)
+        print("You take your knife and stab him, killing him")
+        print("You try to run, but the rest of the tribe gets to you first and kill you for killing their leader.\n")
+        dead = True
+
+    elif option == "Wait":
+        # good choice
+        print("So you sit there...waiting until everyone goes to sleep.")
+        print("Once you see the last person has finally fallen asleep, you decide to make your move.")
+        print("You quietly slip out of the ropes and creep away from the tribe")
+        sleep(delay * 3)
+        print(
+            "You have been walking through the jungle for hours when suddenly you run into someone...another adventurer!")
+        sleep(delay)
+
+    else:
+        # Neural choice
+        print("You call the leader of the tribe over to you.")
+        print("'I do not have anywhere to go. I was wondering if I could possibly join your tribe")
+        print("The leader says a decision will be made later that night during the Ceremony...\n")
+        # later that night
+        print("The Ceremony has begun and the whole tribe is doing their chant...\n")
+        sleep(delay * 3)
+        print("OO AHH AHH AHH, OO AHH AHH AHH")
+        sleep(delay)
+        print("The leader yells 'SILENCE!!!!' " + username + "'wants to join our tribe.'")
+        print("'I have decided that we shall give " + username + " a chance'")
+        print("'We shall teach " + username + " our ways'\n")
+        sleep(delay * 5)
+        print("You are set free, but now you have to be a part of the tribe")
+
+    if dead == True:
+        print("Oh!! What a horrible way to die. Better luck next time! ")
+        quit()
     pass
     # TODO Add your code here
 
