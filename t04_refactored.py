@@ -213,11 +213,48 @@ def team_12_adv():
 
 #########################################################################################################
 # Johnathan and Will
-# Refactored by Team 13:                 #TODO Team 13 names here
-# Google doc link:                       #TODO Team 13 Google doc link here
+# Refactored by Team 13: Mahmoud Amer & Kabelo Makotoko
+# Google doc link: https://docs.google.com/document/d/1qI99v-PuIQuvPOnEpo0BYnBpGkNwSCrQeMppp-L2yRE/edit?usp=sharing
 def team_13_adv():
+
+    global dead
+    print("You choose to leave the cave.\n")
+    sleep(delay * 3)
+    print("The first thing that you see when exiting the cave is a demonic tornado from hell!")
+    print("As the tornado rages on you notice a tank not too far away.\n")
+    choice = input("Your options are either to FIGHT, RUNAWAY, or to TANK\n")
+    if choice == "FIGHT":
+        print("As you approach the tornado, hands up screaming your battle cry, you are sucked up into it.")
+        print("You burn alive as your limbs are ripped from your body.\n")
+        dead = True
+    elif choice == "TANK":
+        print("You open up the tank hatch to find a little German man speaking Japanese")
+        sleep(delay * 2)
+        choice = input("You can either PUNCH him and take the tank or try to SPEAK Japanese back\n")
+        if choice == "PUNCH":
+            sleep(delay * 3)
+            print("The man doesn't even flinch as your fist connects.")
+            print("He draws his Luger and put 7 shots into your chest")
+            dead = True
+        elif choice == "SPEAK":
+            print("You mutter something that you think sounds like Japanese to the man\n")
+            sleep(delay * 2)
+            print("He looks at you like you're an idiot and presses a button on the wall.\n")
+            sleep(delay)
+            print("The tank surprisingly fires a large burst of water from its cannon towards the tornado\n")
+            sleep(delay * 2)
+            print("Congratulations, you survived the horrible fire tornado.")
+            print("The German gives you a shiny pendant! You now continue on your journey into the unknown\n")
+    elif choice == "RUNAWAY":
+        print(" You chose to run back into the cave.")
+        sleep(delay * 2)
+        print("As you blindly sprint into the pitch black cave you slam into a cave wall\n")
+        sleep(delay)
+        print("You fall to the ground and head your head on a rock.")
+        sleep(delay * 5)
+        print("You wake up several hours later and don't remember anything")
+    kill_if_dead(dead)
     pass
-    # TODO Add your code here
 
 
 #########################################################################################################
