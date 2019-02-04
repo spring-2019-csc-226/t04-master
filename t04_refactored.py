@@ -264,7 +264,7 @@ def team_17_adv():
 def team_18_adv():
     print("")
     print("You  come across a dungeon armory.")
-    print("the door behinds you lock behinds you as the one in front of you opens. \n")
+    print("The door behinds you lock behinds you as the one in front of you opens. \n")
     print("what weapon would you like to use from the armory?")
     print("1. Sword")
     print("2. Staff")
