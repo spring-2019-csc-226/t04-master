@@ -553,12 +553,56 @@ def team_13_adv():
 
 #########################################################################################################
 # Nmasichi, Kabelo, and Christian
-# Refactored by Team 14:                 #TODO Team 14 names here
-# Google doc link:                       #TODO Team 14 Google doc link here
+# Refactored by Team 14: Ben Turner, Jalen Prater
+# Google doc link: https://docs.google.com/document/d/18nClywLE7ov2pp9qqSyUscz23Cxp4JegWD2ixIi0Yd4/edit?usp=sharing
 def team_14_adv():
-    pass
-    # TODO Add your code here
 
+    # make the variable dead the same as the one used by all
+    global dead
+
+    print(
+        "Hello " + username + """ You are in heaven. 
+        You noticed you have wings on your back and you have white clothes on.... 
+        \n Kudos!!! You are an angel  """)
+
+    direction = input(
+        """where would you like to take your adventure to? You unworthy angel
+         \n [East : You hear nothing]
+         \n [West: You see a delicious looking apple]
+          \n [South: You hear the cry of a child]
+         \n [North: a woman screaming in agony]""")
+
+    if "west" in direction.lower():
+        print(
+            """You are tempted to eat the Golden apple because you have heard stories of the powers you can receive from it. 
+            \n The moment you bite into the apple, you feel like you are on fire. 
+            \n You look down at yourself and you see flesh lying around your feet covered in blood. 
+            \n You feel like you are getting weak, like you may be on the verge of death. 
+            \n God has no pity. He sends you to the gate separating hell from everything, which is guarded by a big three headed dog, Cerberus. \n Once Cerberus takes note of your scent, he quickly pounces on you. The middle head bit your arm clean off, and you scream in agony.\n Cerebrus takes its left paw with its sharp claws and stabs a hole in your stomach. \n You are unable to move and begin coughing out blood. \n Cerebrus then takes 2 claws and puts them in the hole he created and rips you straight in half spewing your blood everywhere. 
+            \n You are dead   """)
+
+        # dead
+        dead = True
+
+    elif "east" in direction.lower():
+        print(
+            """You were not tempted by the other paths and so you are given the ability to see the near future. 
+            \n God says that there is a catch so you can't consistently use it for greed .
+            \n You may only be able to use this ability when you are nearest to death as it will allow 
+            you the chance to preserve your life should you choose to do so. 
+            \n God painlessly rids you of your wings. God decides to send you to earth to carry out a normal-ish human life. """)
+
+        sleep(delay)
+    else:
+        print(
+            """You search for what you heard and you realize there is no one. 
+            You come to face Lucifer but you return to God. 
+            \n God smites you because you were tempted by the worst of God's creations.
+             God grabs both bases of your wings and without any mercy he rips them from your body.
+              \n He then banishes your pathetic being to the likes of earth. """)
+        sleep(delay)
+    # if the character is dead, kill them, because that makes sense/
+    kill_if_dead(dead)
 
 #########################################################################################################
 # Trent and Dustin
