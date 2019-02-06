@@ -249,7 +249,7 @@ def team_7_adv():
     if dead:
         print("Oh!! What a horrible way to die. Better luck next time! ")
         quit()
-    pass
+
     # TODO Add your code here
 
 
