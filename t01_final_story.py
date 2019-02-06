@@ -136,7 +136,9 @@ elif path == "Right":
 
 if dead == True:
     print("Damn those goblins! Choose a different path and try again!")
-quit()
+    quit()
+
+
 #########################################################################################################
 # Evan, Hila, and Megan
 # Refactored by Team 3
