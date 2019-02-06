@@ -107,41 +107,38 @@ def sample_adventure():
 # Audrey, Lesley, and Anya
 # Refactored by Team 1: Hila Manalai, Roberto Santos
 # Google doc link: https://docs.google.com/document/d/1UeWIsfZeK1UmwJAz834Q7LeMMbWXNHLxYvTCuirWNU4/edit?usp=sharing
+
 def team_1_adv():
-    pass
-    # TODO Add your code here
+    print("You found yourself inside the mouth of the Mammoth Cave.")
+    print("It's dark outside but you see the light inside the cave.")
 
+    direction = input("You have a choice to make [stay outside or follow the light]")
 
-print("You found yourself inside the mouth of the Mammoth Cave")
-print("It's dark outside but you see the light inside the cave.")
+    if direction == "stay outside":
+        # Good choice!
+        print("Great decision! You have a hammock and some food. You will survive until morning")
 
-direction = input("You have a choice to make [stay outside or follow the light]")
+        sleep(delay)
 
-# def direction():
+    elif direction == " follow the light":
+        # Bad choice
+        print("Hungry hungry hyenas live in this cave and you have just disturbed their sleep.")
+        sleep(delay)
+        print("The rangers dropped their flashlight the last time they toured the cave.")
+        print("The hyenas are closing in behind you. The exit is blocked...")
+        print("You have been eaten alive. Good job!")
+        dead = True
 
-if direction == "stay outside":
-    # Good choice!
-    print("Great decision! You have a hammock and some food. You will survive until morning")
+    else:
+        # Neutral choice
+        print("You got scared of your own shadow.You passed out for several hours.")
+        print("After you wake up, you decide to go deeper into the cave. The adventure continues.")
 
-    sleep(delay)
+    if dead:
+        print("Oh, no! It was not your luck today! You died.")
+        quit()
 
-elif direction == "follow the light":
-    # Bad choice
-    print("Hungry hungry hyenas live in this cave and you have just disturbed their sleep.")
-    sleep(delay)
-    print("The rangers dropped their flashlight the last time they toured the cave.")
-    print("The hyenas are closing in behind you. The exit is blocked...")
-    print("You have been eaten alive. Good job!")
-    dead = True
-
-else:
-    # Neutral choice
-    print("You got scared of your own shadow.You passed out for several hours.")
-    print("After you wake up, you decide to go deeper into the cave. The adventure continues.")
-
-if dead == True:
-    print("Oh, no! It was not your luck today! You died.")
-    quit()
+team_1_adv()
 
 
 #########################################################################################################
