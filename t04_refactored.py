@@ -101,7 +101,7 @@ def sample_adventure():
         sleep(delay)
 
     kill_if_dead(dead)
-#
+
 
 #########################################################################################################
 # Audrey, Lesley, and Anya
