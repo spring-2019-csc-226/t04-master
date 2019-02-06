@@ -254,7 +254,7 @@ def team_13_adv():
         sleep(delay * 5)
         print("You wake up several hours later and don't remember anything")
     kill_if_dead(dead)
-    pass
+
 
 
 #########################################################################################################
