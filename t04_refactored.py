@@ -171,7 +171,7 @@ def team_7_adv():
 # Refactored by Team 8:                 #TODO Team 8 names here
 # Google doc link:                      #TODO Team 8 Google doc link here
 def team_8_adv():
-
+    global dead
     # A Haunted house with four doors and each doors leads to different destination
     print()
     print("You are trapped in a haunted house with four doors")
@@ -189,11 +189,12 @@ def team_8_adv():
         print("It is difficult to survive among these zombies")
         print("You have no choice than to be eaten up by the zombies")
         print("Your blood taste like an orange juice, and your flesh taste like a barbecue chicken to the zombies")
+        dead = True
         # Door2 Comprises of good and bad choices
     elif direction == "door2":
         print("Wow!!! You have  made a wonderful choice but you have to enter a code  \n on the door")
         print("There are two codes in front of the door, one among the two codes exits you from the haunted house")
-        print("The other code opens the door for a hungry Snakes into the room")
+        print("The other code opens the door for hungry Snakes into the room")
         choice = input(' Enter code 1 or 2 on the door locker')
         x = int(choice)
         if x == 1:
@@ -205,6 +206,7 @@ def team_8_adv():
             sleep(delay)
             print("Say your last words before you find yourselves in our stomachs")
             print("You are now Dead")
+            dead = True
     # Even or odd number decision keep you alive or dead
     elif direction == "door4":
         print("This is the worst door. but there are still options to make towards your survival")
@@ -219,13 +221,14 @@ def team_8_adv():
             print("You entered an odd number")
             print("The dragon will now feed on you")
             print(" You are Dead without any further travel!!! ")
+            dead = True
     # The best option to make
     elif direction == "door3":
         print(" You are now safe")
         print("this door automatically get you out of the haunted house")
         print("Look at that! You made it safe without being killed! ")
         print("Congratulations... now go play again and explore every other door in the haunted house.")
-
+    kill_if_dead(dead)
 
 #########################################################################################################
 # Mahmoud and Shageldi
