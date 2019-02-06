@@ -177,16 +177,18 @@ def team_8_adv():
 
 #########################################################################################################
 # Mahmoud and Shageldi
-# Refactored by Team 9: Dustin Cooper, Makenzie Brownlowe                #TODO Team 9 names here
-# Google doc link: https://docs.google.com/document/d/1WunlG64ED9wtfMxj5t5qzRmrmTwI-w2WmrAEWYGE8FE/edit#                    #TODO Team 9 Google doc link here
+# Refactored by Team 9: Dustin Cooper, Makenzie Brownlowe
+# Google doc link: https://docs.google.com/document/d/1WunlG64ED9wtfMxj5t5qzRmrmTwI-w2WmrAEWYGE8FE/edit#
 def team_9_adv():
     #########################################################################################################
     # Mahmoud and Shageldi
     # Refactored by Team 9
 
-    print(
-        "\nOnce upon a time, while completing a cross country hike, you became so thirsty. Somewhere in the woods, you see a bar and decide to visit.\nThe bar is completely empty, meaning there was no alive soul. You take a menu and it lists three types of drinks: Tea, Beer, Soda. One of the drinks is poisonous.")
-    choice = input("Choose what you want to drink: ").lower()
+    print("\nOnce upon a time, while completing a cross country hike, you became so thirsty. "
+          "Somewhere in the woods, you see a bar and decide to visit.\nThe bar is completely empty, "
+          "meaning there was no alive soul. You take a menu and it lists three types of drinks: Tea, Beer, Soda. "
+          "One of the drinks is poisonous.")
+    choice = input("Choose what you want to drink: ")
     corpse = False
     if choice == "tea":
         # this is a good choice
@@ -197,18 +199,14 @@ def team_9_adv():
         # this is a bad choice, which would kill the player
         print("\nCongratulations!  You have 5 more minutes to write a letter to your family for the last time.")
         sleep(3)
-        corpse = True
+        print("\nThis is the end of your life journey.")
+        quit()
     else:
         # this is a neutral choice
         print("\nNot that bad! It is time to leave the bar. Safe trips.")
         sleep(3)
         print("\nDemon laughing: Hahaha  hahaha hahaha")
 
-    if corpse == True:
-        print("\nThis is the end of your life journey.")
-        quit()
-    pass
-    # TODO Add your code here
 
 
 #########################################################################################################
