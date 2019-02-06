@@ -430,7 +430,8 @@ def team_14_adv():
              God grabs both bases of your wings and without any mercy he rips them from your body.
               \n He then banishes your pathetic being to the likes of earth. """)
         sleep(delay)
-
+    # if the character is dead, kill them, because that makes sense/
+    kill_if_dead(dead)
 
 #########################################################################################################
 # Trent and Dustin
