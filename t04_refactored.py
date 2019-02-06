@@ -308,6 +308,7 @@ def main():
     :return: None
     """
 
+
     username = start_story()
     paths = [sample_adventure, team_1_adv, team_2_adv,
              team_3_adv, team_4_adv, team_5_adv,
