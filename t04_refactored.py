@@ -168,8 +168,8 @@ def team_7_adv():
 
 #########################################################################################################
 # Liberty and Joseph
-# Refactored by Team 8:                 #TODO Team 8 names here
-# Google doc link:                      #TODO Team 8 Google doc link here
+# Refactored by Team 8:                 #Johnathan West and Caleb Schaller
+# Google doc link:                      #https://docs.google.com/document/d/1Cp1PgZYSR_yV38XJeLj0LyTgzhJ0FLIfJxyJXtiUGh4/edit?usp=sharing
 def team_8_adv():
     global dead
     # A Haunted house with four doors and each doors leads to different destination
