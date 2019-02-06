@@ -400,11 +400,83 @@ def team_15_adv():
 
 #########################################################################################################
 # Tristan and Azah
-# Refactored by Team 16:                 #TODO Team 16 names here
-# Google doc link:                       #TODO Team 16 Google doc link here
+# Refactored by Team 16:                 #Justin and Heremes
+# Google doc link: https://docs.google.com/document/d/1Roq1OdFZ9eDMyAFj184HY3wK8MZniQx_X01FXFm_FrE/edit?usp=sharing
 def team_16_adv():
-    pass
-    # TODO Add your code here
+    global dead
+    print("You enter into the abandoned cabin, trying to find a place to rest for the night.")
+    sleep(delay)
+    print("You go to the table to start unpacking, first your backpack, and then your water.")
+    sleep(delay)
+    print("After a few minutes of trying to get your stuff set up and a fire going for the night, you begin to "
+          "hear heavy footsteps outside")
+    sleep(delay*2)
+    print("Quick! Where to hide at?")
+
+    choice = input("Under the Table, Closet, Don't move, Play dead, ")
+    if choice == "Table" or choice == "table":
+        print("You get under the Table, trying to make no noise.")
+        sleep(delay)
+        print("In through the Cabin door comes a bear! It stops, and begins sniffing the room")
+        sleep(delay)
+        print("It walks over to the table, stopping in front of it and growling. Uh oh, you think it's found you.")
+    elif choice == "Closet" or choice == "closet":
+        print("You scramble to the closet, shutting it, keeping it just open enough to peek outside.")
+        sleep(delay)
+        print("In through the Cabin door comes a bear! It stops, and begins sniffing the room")
+        sleep(delay)
+        print("It lumbers over to the closet, clawing at the door and roaring. Uh oh, you think it's found you.")
+    elif choice == "Stand still" or choice == "stand still" or choice == "Stand Still":
+        print("You hold your ground, staring at the door anxious.")
+        sleep(delay)
+        print("In through the Cabin door comes a bear! It stops, and stares directly at you, roaring.")
+    elif choice == "Play dead" or choice == "play dead" or choice == "Play Dead":
+        print("You drop to the floor, trying to be as still as you can be.")
+        sleep(delay)
+        print("In through the Cabin door comes a bear! It stops, and begins sniffing the room")
+        sleep(delay)
+        print('''The bear walks over to you. You can only assume it noticed your breathing,
+            it's roared and scared you to your feet.''')
+    sleep(delay*2)
+    print("The bear seems to charging up a swing at you! ")
+    choice = input("Will you: Dodge, Attack, or Block? ")
+    if choice == "Dodge" or choice == "dodge":
+        print("The bear lunges at you, and you side step the attack.")
+    elif choice == "Block" or choice == "block":
+        print("The bear lunges at you, you hold up your shield and the bears claw's deflect off of it")
+    elif choice == "Attack" or choice == "attack":
+        print("You swing your sword at the bear and catch it in the arm!")
+        sleep(delay)
+        print("You feel pretty good about yourself until the bear cracks your skull with it's claw")
+        dead = True
+    if dead:
+        sleep(delay)
+        print("Your story ends there, Bear food.")
+        quit()
+    else:
+        sleep(delay)
+        print("The bear's claws whizzes by your head in a second swing. The bear falls and you stick your sword"
+              " through it's skull, Good job! You finally now have a moment to relax and eat.")
+
+    # Secondary Assignment
+
+    if not dead:
+        sleep(delay)
+        print("Now it's time to divide your Rations for the day")
+        sleep(delay)
+        choice = int(input("You have 8 Rations remaining, how many are you going to cook? "))
+        if choice >= 1 <= 2:
+            print("Not a whole lot, but enough to keep you going for the day, you assume. You'll have to wait and see")
+        elif choice >= 3 <= 5:
+            print("You're cooking a fair bit of your Rations. Let's hope you find more, or have enough for the week.")
+        elif choice >= 6 <= 8:
+            print("At least you'll eat well tonight, you better hope it was worth it.")
+        elif choice >= 9:
+            print("Ambitious huh? You don't have that many Rations. You cook as many as you can.")
+        elif choice <= 0:
+            print("None huh? Guess you're trying to keep some, smart.")
+        else:
+            print("You're so unsure of how many to cook, you don't cook any, you'll just go hungry tonight.")
 
 
 #########################################################################################################
