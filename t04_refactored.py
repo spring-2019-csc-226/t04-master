@@ -20,7 +20,8 @@
 import random
 from time import sleep
 
-delay = 1.0          # change to 0.0 for testing/speed runs; larger for dramatic effect!
+delay = 1.0  # change to 0.0 for testing/speed runs; larger for dramatic effect!
+
 dead = False
 
 
@@ -66,7 +67,7 @@ def kill_if_dead(dead):
     :param dead: A boolean value where false let's the story continue, and true ends it.
     :return: None
     """
-    if dead:
+    if dead is True:
         quit()
 
 ###################################################################################
@@ -97,7 +98,8 @@ def sample_adventure():
         dead = True
     else:
         # Neutral choice
-        print("You're in another part of the cave. It is equally dark, and equally uninteresting. Please get me out of here!")
+        print("You're in another part of the cave. It is equally dark, and equally uninteresting. \n"
+              "Please get me out of here!")
         sleep(delay)
 
     kill_if_dead(dead)
@@ -186,13 +188,12 @@ def team_9_adv():
 
 #########################################################################################################
 # Nicole and Eleni
-# Refactored by Team 10:                 #TODO Team 10 names here
-# Google doc link:                       #TODO Team 10 Google doc link here
-def team_10_adv():
-    pass
-    # Nicole and Eleni
-    # Refactored by Team 10
+# Refactored by Team 10:   william &              #TODO Team 10 names here
+# Google doc link:    # https://docs.google.com/document/d/1CoGXtESM1PA4YltCNgXkEjWGLLiRthPtRQFET47bYyw/edit#
 
+def team_10_adv():
+
+    global username
     print()
     print("Welcome, " + username + ",to Las Vegas.")
     sleep(delay)
@@ -209,26 +210,24 @@ def team_10_adv():
     print()
     sleep(delay)
 
-    Choice = input("What did you decide to do? [Run/Hide/Fight]")
-
-    if Choice == "Run":
+    choice = input("What did you decide to do? [Run/Hide/Fight]")
+    if choice == "Run":
         # Safe Choice
         print('You are safe!')  # Safe option
         sleep(delay * 2)
-    elif Choice == "Hide":
+    elif choice == "Hide":
         # Correct options
         print("The story continues. You survived!")
         sleep(delay * 2)
-    elif Choice == "Fight":
+    elif choice == "Fight":
         # Wrong Choice
         print("You are dead! Sorry :( ")
-        sleep(delay * 2)
         dead = True
-
-
 
     else:
         print("You were not able to do that.")
+
+    kill_if_dead()
 
     # TODO Add your code here
 
