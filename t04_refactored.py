@@ -393,6 +393,7 @@ def team_14_adv():
         "Hello " + username + """ You are in heaven. 
         You noticed you have wings on your back and you have white clothes on.... 
         \n Kudos!!! You are an angel  """)
+
     direction = input(
         """where would you like to take your adventure to? You unworthy angel
          \n [East : You hear nothing]
@@ -409,6 +410,7 @@ def team_14_adv():
             \n God has no pity. He sends you to the gate separating hell from everything, which is guarded by a big three headed dog, Cerberus. \n Once Cerberus takes note of your scent, he quickly pounces on you. The middle head bit your arm clean off, and you scream in agony.\n Cerebrus takes its left paw with its sharp claws and stabs a hole in your stomach. \n You are unable to move and begin coughing out blood. \n Cerebrus then takes 2 claws and puts them in the hole he created and rips you straight in half spewing your blood everywhere. 
             \n You are dead   """)
 
+        # dead
         dead = True
 
     elif "east" in direction.lower():
@@ -482,14 +484,13 @@ def main():
     """
 
     username = start_story()
-    # paths = [sample_adventure, team_1_adv, team_2_adv,
-    #          team_3_adv, team_4_adv, team_5_adv,
-    #          team_6_adv, team_7_adv, team_8_adv,
-    #          team_9_adv, team_10_adv, team_11_adv,
-    #          team_12_adv, team_13_adv, team_14_adv,
-    #          team_15_adv, team_16_adv, team_17_adv,
-    #          team_18_adv, team_19_adv]
-    paths = [sample_adventure, team_14_adv]
+    paths = [sample_adventure, team_1_adv, team_2_adv,
+             team_3_adv, team_4_adv, team_5_adv,
+             team_6_adv, team_7_adv, team_8_adv,
+             team_9_adv, team_10_adv, team_11_adv,
+             team_12_adv, team_13_adv, team_14_adv,
+             team_15_adv, team_16_adv, team_17_adv,
+             team_18_adv, team_19_adv]
     random.shuffle(paths)                               # Shuffles the order of paths, so each adventure is different
 
     for i in range(len(paths)):
