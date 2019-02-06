@@ -292,6 +292,7 @@ def team_16_adv():
     if dead:
         sleep(delay)
         print("Your story ends there, Bear food.")
+        quit()
     else:
         sleep(delay)
         print("The bear's claws whizzes by your head in a second swing. The bear falls and you stick your sword"
@@ -316,7 +317,6 @@ def team_16_adv():
             print("None huh? Guess you're trying to keep some, smart.")
         else:
             print("You're so unsure of how many to cook, you don't cook any, you'll just go hungry tonight.")
-    # TODO Add your code here
 
 
 #########################################################################################################
