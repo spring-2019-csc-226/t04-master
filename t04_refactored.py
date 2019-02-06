@@ -99,8 +99,8 @@ def sample_adventure():
         # Neutral choice
         print("You're in another part of the cave. It is equally dark, and equally uninteresting. Please get me out of here!")
         sleep(delay)
-
     kill_if_dead(dead)
+
 
 
 #########################################################################################################
@@ -499,11 +499,39 @@ def team_18_adv():
 
 #########################################################################################################
 # Willy and Justin
-# Refactored by Team 19:                 #TODO Team 19 names here
-# Google doc link:                       #TODO Team 19 Google doc link here
+# Refactored by Team 19: Sandesh Lamichhane, Lesley Knox
+# Google doc link: https://docs.google.com/document/d/1t2CauURVe-mGNAmSKxBVAQC90mN1WN6lSDrQYZzrEV4/edit?usp=sharing
 def team_19_adv():
-    pass
-    # TODO Add your code here
+
+    global dead
+
+    sleep(delay)
+    print()
+    print('You see 3 boxes in the path. You have an innate curiosity of what resides in those boxes.')
+    boxes = input("What would you like to do? (Open Right, Open Middle, Open Left, Keep Walking.)")
+    sleep(delay)
+    if boxes == "Open Right":
+        sleep(delay)
+        print()
+        print('A cat pops out and claws your eye out!')
+        print("Talk about a bad day! You are now only capable of seeing half as well!")
+        sleep(delay)
+    elif boxes == "Open Middle":
+        sleep(delay)
+        print()
+        print('A leprechaun pops out with a flamethrower. You have been burned by the Irishman!')
+        dead = True
+    elif boxes == "Open Left":
+        print()
+        sleep(delay)
+        print("A happy leprechaun pops out, hands you a shiny golden piece, and leads you on his happy journey home!")
+    else:
+        sleep(delay)
+        print("You continue walking in the darkness ahead, fearful of what resides in the boxes. You are still lost.")
+    if dead is True:
+        print()
+        print('You have died! By a leprechaun! HAHAHAHAHAHAHAHAHAHAHA!!!!')
+        quit()
 
 
 def main():
@@ -511,6 +539,7 @@ def main():
     The main function, where the program starts.
     :return: None
     """
+
 
     username = start_story()
     paths = [sample_adventure, team_1_adv, team_2_adv,
