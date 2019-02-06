@@ -159,8 +159,8 @@ def team_6_adv():
 
 #########################################################################################################
 # Kenzie and Caleb
-# Refactored by Team 7:                 #TODO Team 7 names here
-# Google doc link:                      #TODO Team 7 Google doc link here
+# Refactored by Team 7: Minh, Lisandro, Megan                #TODO Team 7 names here
+# Google doc link: https://docs.google.com/document/d/1v0xL0OgO6_Z8l74_Gmb7Gg-4M28DCPIOM4q7xRe5ApY/edit?usp=sharing                    #TODO Team 7 Google doc link here
 
 def team_7_adv():
     global dead
