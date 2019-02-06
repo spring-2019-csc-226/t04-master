@@ -210,6 +210,7 @@ def team_11_adv():
     # Sandesh
     # Refactored by Team 12
 def team_12_adv():
+    """This function runs you through a cave. Yiu have to choose wisely so that You can get out of it. """
     global dead
     print("The further you go the colder the cave seems to get.")
     print("In the distance you can hear a muted *splat* *splat* sound of water droplets hitting the cave floor.")
