@@ -195,10 +195,10 @@ def team_10_adv():
 
 #########################################################################################################
 # Roberto and David
-# Refactored by Team 11:                 #TODO Team 11 names here
-# Google doc link:                       #TODO Team 11 Google doc link here
+# Refactored by Team 11:    #Nmasichi Chukwuemeka, Trent Powell, Alex Craig
+# Google doc link:          #https://docs.google.com/document/d/1k3iU9IosNd8sYJ2kfGhNvTCngZ5HTC0qKnabXkCH3Vo/edit?usp=sharing
 def team_11_adv():
-    # https://docs.google.com/document/d/1k3iU9IosNd8sYJ2kfGhNvTCngZ5HTC0qKnabXkCH3Vo/edit?usp=sharing
+
     global dead             # You'll need this to be able to modify the dead variable
     if dead is False:
         print("After hours of wandering in the cave you met Indiana Jones")
