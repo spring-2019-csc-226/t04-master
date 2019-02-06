@@ -204,9 +204,9 @@ def team_11_adv():
         print("After hours of wandering in the cave you met Indiana Jones")
         sleep(delay)
         print("He wants to help to search for a treasure")
-        Decision == input("Do you want to join him? {Join, Stay, Leave} ")
+        decision = input("Do you want to join him? {Join, Stay, Leave} ")
 
-        if Decision is "Join":
+        if decision is "Join":
             print("Great, you found a treasure with Indiana Jones.")
             sleep(delay * 3)
             print()
@@ -216,7 +216,7 @@ def team_11_adv():
             print("When you turned around, he pulled out a gun and shoot you to your head.")
             dead = True
             # bad option
-        elif Decision == "Stay":
+        elif decision == "Stay":
             print("Indiana Jones went the wrong direction and fell for a trap")
             sleep(delay * 3)
             print()
