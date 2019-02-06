@@ -8,7 +8,7 @@
 # will either be incoherently random, or entertainingly "Mad Lib" like.
 # Either way, it should be fun!
 ######################################################################
-# Acknowledgements:
+# Acknowledgements
 #   Original Author: Dr. Scott Heggen
 #
 #   Inspired by https://www.cs.hmc.edu/twiki/bin/view/CS5/Week0ChoiceProblem
@@ -320,7 +320,7 @@ if dead == True:
 direction = input("Which direction would you like to go? {North, South, East, West}" )
 
 if direction == "South":
-    # right choice
+    # right choice.
     print("You locate a stream of water on the floor. Following it could lead you to the exit.")
     sleep(delay)
 elif direction == "East":
