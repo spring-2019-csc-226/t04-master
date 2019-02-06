@@ -125,31 +125,35 @@ def team_2_adv():
 # Evan, Hila, and Megan
 # Refactored by Team 3:  Thomas Brown, Eleni Lazaridou
 # Google doc link:  https://docs.google.com/document/d/1Ht1q5ChzK7puaiLILkQ650FyQ9SSIXQ814VHqDUT_Yw/edit#
+
 def team_3_adv():
+    global dead
     print("You hear a large explosion from behind and your head hits the ground WHACK")
+
     for i in range(3):
         sleep(delay)
         print("...")
     print("Your eyes blur and you wake up in a cold, dark cellar. You see a collection of metal bars in front of you.")
     print("You realize you are in a jail cell.")
+
     if not dead:
         choice1 = input("What would you like to do? [look/escape]")
-    if choice1.find("look") is not -1 and not 'dead':
-        print("You see your bed, a small nightstand with a rubber duck sitting on top, and a small hole in the corner.")
-    elif choice1.find("escape") is not -1 and not 'dead':
-        print("You flail your arms through the prison cell bars screaming for attention.")
-        sleep(delay)
-        print("A guard dressed in full chain mail blazoned by the kings crest approaches you.")
-        print("What is all this raquet for?! Silence!")
-        print("He hits you over the head with his mace killing you instantly.")
-        dead = True
+        if choice1.find("look") is not -1 and not 'dead':
+            print("You see your bed, a small nightstand with a rubber duck sitting on top, and a small hole in the corner.")
+        elif choice1.find("escape") is not -1 and not 'dead':
+            print("You flail your arms through the prison cell bars screaming for attention.")
+            sleep(delay)
+            print("A guard dressed in full chain mail blazoned by the kings crest approaches you.")
+            print("What is all this raquet for?! Silence!")
+            print("He hits you over the head with his mace killing you instantly.")
+            dead = True
 
     else:
         print("you waste away in prison and die of boredom")
         dead = True
+
     if not dead:
         choice2 = input("What will you do now? [squeak rubber ducky/pick up bedsheets]")
-    if not dead:
         if choice2.find("squeak") is not -1 and not dead:
             print("The sharp squeak of the small toy duck rings through the empty hall.")
             sleep(delay)
@@ -206,6 +210,8 @@ def team_3_adv():
     if not dead:
         print("congratulations you have escaped prison")
         quit()
+
+
 
 
 #########################################################################################################
