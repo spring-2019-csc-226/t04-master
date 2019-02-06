@@ -233,10 +233,7 @@ def team_11_adv():
             sleep(delay * 3)
             print("The story continues")
 
-        if dead is True:
-            sleep(delay * 3)
-            print("Oh no! You died. Better luck next time!. ")
-            quit()
+        kill_if_dead(dead)
     # TODO Add your code here
 
 
