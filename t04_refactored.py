@@ -179,17 +179,17 @@ def team_8_adv():
 # Mahmoud and Shageldi
 # Refactored by Team 9: Dustin Cooper, Makenzie Brownlowe
 # Google doc link: https://docs.google.com/document/d/1WunlG64ED9wtfMxj5t5qzRmrmTwI-w2WmrAEWYGE8FE/edit#
-def team_9_adv():
-    #########################################################################################################
-    # Mahmoud and Shageldi
-    # Refactored by Team 9
+#########################################################################################################
 
+
+
+def team_9_adv():
+    global dead
     print("\nOnce upon a time, while completing a cross country hike, you became so thirsty. "
           "Somewhere in the woods, you see a bar and decide to visit.\nThe bar is completely empty, "
-          "meaning there was no alive soul. You take a menu and it lists three types of drinks: Tea, Beer, Soda. "
+          "meaning there was no alive soul. You take a menu and it lists three types of drinks: tea, beer, soda. "
           "One of the drinks is poisonous.")
     choice = input("Choose what you want to drink: ")
-    corpse = False
     if choice == "tea":
         # this is a good choice
         print("\nGreat Choice!!! You get one more drink on the house with no poison in it")
@@ -199,14 +199,18 @@ def team_9_adv():
         # this is a bad choice, which would kill the player
         print("\nCongratulations!  You have 5 more minutes to write a letter to your family for the last time.")
         sleep(3)
-        print("\nThis is the end of your life journey.")
-        quit()
+        dead = True
     else:
         # this is a neutral choice
         print("\nNot that bad! It is time to leave the bar. Safe trips.")
         sleep(3)
         print("\nDemon laughing: Hahaha  hahaha hahaha")
+    if dead == True:
+        print("\nThis is the end of your life journey.")
+        quit()
 
+
+team_9_adv()
 
 
 #########################################################################################################
