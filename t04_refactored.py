@@ -385,6 +385,8 @@ def team_13_adv():
 # Refactored by Team 14: Ben Turner, Jalen Prater
 # Google doc link: https://docs.google.com/document/d/18nClywLE7ov2pp9qqSyUscz23Cxp4JegWD2ixIi0Yd4/edit?usp=sharing
 def team_14_adv():
+
+    # make the variable dead the same as the one used by all
     global dead
 
     print(
@@ -398,7 +400,7 @@ def team_14_adv():
           \n [South: You hear the cry of a child]
          \n [North: a woman screaming in agony]""")
 
-    if direction == "west ":
+    if "west" in direction.lower():
         print(
             """You are tempted to eat the Golden apple because you have heard stories of the powers you can receive from it. 
             \n The moment you bite into the apple, you feel like you are on fire. 
@@ -407,8 +409,9 @@ def team_14_adv():
             \n God has no pity. He sends you to the gate separating hell from everything, which is guarded by a big three headed dog, Cerberus. \n Once Cerberus takes note of your scent, he quickly pounces on you. The middle head bit your arm clean off, and you scream in agony.\n Cerebrus takes its left paw with its sharp claws and stabs a hole in your stomach. \n You are unable to move and begin coughing out blood. \n Cerebrus then takes 2 claws and puts them in the hole he created and rips you straight in half spewing your blood everywhere. 
             \n You are dead   """)
 
-            dead = True
-    elif direction == "east":
+        dead = True
+
+    elif "east" in direction.lower():
         print(
             """You were not tempted by the other paths and so you are given the ability to see the near future. 
             \n God says that there is a catch so you can't consistently use it for greed .
@@ -479,13 +482,14 @@ def main():
     """
 
     username = start_story()
-    paths = [sample_adventure, team_1_adv, team_2_adv,
-             team_3_adv, team_4_adv, team_5_adv,
-             team_6_adv, team_7_adv, team_8_adv,
-             team_9_adv, team_10_adv, team_11_adv,
-             team_12_adv, team_13_adv, team_14_adv,
-             team_15_adv, team_16_adv, team_17_adv,
-             team_18_adv, team_19_adv]
+    # paths = [sample_adventure, team_1_adv, team_2_adv,
+    #          team_3_adv, team_4_adv, team_5_adv,
+    #          team_6_adv, team_7_adv, team_8_adv,
+    #          team_9_adv, team_10_adv, team_11_adv,
+    #          team_12_adv, team_13_adv, team_14_adv,
+    #          team_15_adv, team_16_adv, team_17_adv,
+    #          team_18_adv, team_19_adv]
+    paths = [sample_adventure, team_14_adv]
     random.shuffle(paths)                               # Shuffles the order of paths, so each adventure is different
 
     for i in range(len(paths)):
