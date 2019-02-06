@@ -228,10 +228,45 @@ def team_10_adv():
 
 #########################################################################################################
 # Roberto and David
-# Refactored by Team 11:                 #TODO Team 11 names here
-# Google doc link:                       #TODO Team 11 Google doc link here
+# Refactored by Team 11:    #Nmasichi Chukwuemeka, Trent Powell, Alex Craig
+# Google doc link:          #https://docs.google.com/document/d/1k3iU9IosNd8sYJ2kfGhNvTCngZ5HTC0qKnabXkCH3Vo/edit?usp=sharing
 def team_11_adv():
-    pass
+
+    global dead             # You'll need this to be able to modify the dead variable
+    if dead is False:
+        print("After hours of wandering in the cave you met Indiana Jones")
+        sleep(delay)
+        print("He wants to help to search for a treasure")
+        decision = input("Do you want to join him? {Join, Stay, Leave} ")
+
+        if decision is "Join":
+            print("Great, you found a treasure with Indiana Jones.")
+            sleep(delay * 3)
+            print()
+            print("However, he really does not like to share.")
+            sleep(delay * 3)
+            print()
+            print("When you turned around, he pulled out a gun and shoot you to your head.")
+            dead = True
+            # bad option
+        elif decision == "Stay":
+            print("Indiana Jones went the wrong direction and fell for a trap")
+            sleep(delay * 3)
+            print()
+            print("You can hear boulder movements followed by bone cracking and human scream")
+            sleep(delay * 3)
+            print()
+            print("Indian Jones died as a hero")
+            # good option
+        else:
+            # neutral choice
+            print("You left the place and you keep going deeper into the cave.")
+            sleep(delay * 3)
+            print("You do not know what happened with Indiana Jones")
+            sleep(delay * 3)
+            print("The story continues")
+
+        kill_if_dead(dead)
     # TODO Add your code here
 
 
