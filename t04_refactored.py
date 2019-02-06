@@ -154,7 +154,7 @@ def team_5_adv():
 # Google doc link:                      #TODO Team 6 https://docs.google.com/document/d/1lVaSKzBsf-wlLdDJVvwkwkA6EALrBiCw4vmcJzR7BYQ/edit?usp=sharing
 def team_6_adv():
     global dead
-    direction = input("Which direction would you like to go? {North, South, East, West}")
+    direction = input("Which direction would you like to go? {South, West}")
 
     if direction == "South":
         # right choice.
