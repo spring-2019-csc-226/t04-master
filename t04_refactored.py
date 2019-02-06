@@ -117,7 +117,7 @@ def team_1_adv():
 # Refactored by Team 2: Taran Wells and Karmadri Santiago
 # Google doc link: https://docs.google.com/document/d/1M3OJOQiKxbe_57SM0niqnfJTS22-_3byPeFv1AE3FKM/edit?usp=sharing
 def team_2_adv():
-    """"""
+    """Pesky Goblin Mission"""
     global dead
     print("You are in a dark cave. You decide to move further into the cave, and you notice a fork into three paths.")
     sleep(delay)
