@@ -249,10 +249,9 @@ def team_16_adv():
     print("You go to the table to start unpacking, first your backpack, and then your water.")
     sleep(delay)
     print("After a few minutes of trying to get your stuff set up and a fire going for the night, you begin to "
-      "hear heavy footsteps outside")
+          "hear heavy footsteps outside")
     sleep(delay*2)
     print("Quick! Where to hide at?")
-# choice = ""
 
     choice = input("Under the Table, Closet, Don't move, Play dead, ")
     if choice == "Table" or choice == "table":
@@ -305,11 +304,11 @@ def team_16_adv():
         print("Now it's time to divide your Rations for the day")
         sleep(delay)
         choice = int(input("You have 8 Rations remaining, how many are you going to cook? "))
-        if choice >=1 and choice <=2:
+        if choice >= 1 <= 2:
             print("Not a whole lot, but enough to keep you going for the day, you assume. You'll have to wait and see")
-        elif choice >=3 and choice <=5:
+        elif choice >= 3 <= 5:
             print("You're cooking a fair bit of your Rations. Let's hope you find more, or have enough for the week.")
-        elif choice >=6 and choice <=8:
+        elif choice >= 6 <= 8:
             print("At least you'll eat well tonight, you better hope it was worth it.")
         elif choice >= 9:
             print("Ambitious huh? You don't have that many Rations. You cook as many as you can.")
