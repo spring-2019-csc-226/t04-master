@@ -210,6 +210,7 @@ def team_11_adv():
     # Sandesh
     # Refactored by Team 12
 def team_12_adv():
+    global dead
     print("The further you go the colder the cave seems to get.")
     print("In the distance you can hear a muted *splat* *splat* sound of water droplets hitting the cave floor.")
     print(
@@ -222,9 +223,9 @@ def team_12_adv():
     print("Your ears are filled with the sound of your ever increasing heart beat ")
     print("and the tentative slap of your feet against the cave floor as you slowly make your way forward.")
     print("...\n")
-    sleep(delay)
-    sleep(delay)
-    sleep(delay)
+    for i in range(3):
+        sleep(delay)
+
     print("Your slow march comes to a sudden end as you spot a figure of shadow in front of you.")
     print("The figure, no the monster seems to be coming closer. You can either run away, charge the monster, or hide")
 
@@ -232,8 +233,8 @@ def team_12_adv():
 
     if choice2 == "run":
         print("You turn in the other direction and run as fast as you can with no thought of where you are heading.")
-        sleep(delay)
-        sleep(delay)
+        for i in range(3):
+            sleep(delay)
         print("You finally stop and catch your breath. The monster had not followed you.")
         print("You are completely lost but at least there are no monsters near you, hopefully.")
 
@@ -256,13 +257,24 @@ def team_12_adv():
         print("After a minute or two you begin to realize that the monster was not there anymore.")
         print("You realize that the monster was never there to begin with. ")
         print("You realize that the monster was just a figment of your flustered imagination.")
-        sleep(delay)
-        sleep(delay)
+        for i in range(3):
+            sleep(delay)
         print("You decide to continue on.")
         print("After a while of walking the ground begins to slop downwards.")
-        print("at the bottom of the slope you see a faint light")
+        print("at the bottom of te slope you see a faint light")
+        kill_if_dead(dead)
 
-    pass
+
+def main():
+    start_story()
+    team_12_adv()
+
+
+main()
+
+
+
+pass
     # TODO Add your code here
 
 
