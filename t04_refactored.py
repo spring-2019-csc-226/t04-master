@@ -123,11 +123,95 @@ def team_2_adv():
 
 #########################################################################################################
 # Evan, Hila, and Megan
-# Refactored by Team 3:                 #TODO Team 3 names here
-# Google doc link:                      #TODO Team 3 Google doc link here
+# Refactored by Team 3:  Thomas Brown, Eleni Lazaridou
+# Google doc link:  https://docs.google.com/document/d/1Ht1q5ChzK7puaiLILkQ650FyQ9SSIXQ814VHqDUT_Yw/edit#
+
 def team_3_adv():
-    pass
-    # TODO Add your code here
+    global dead
+    print("You hear a large explosion from behind and your head hits the ground WHACK")
+
+    for i in range(3):
+        sleep(delay)
+        print("...")
+    print("Your eyes blur and you wake up in a cold, dark cellar. You see a collection of metal bars in front of you.")
+    print("You realize you are in a jail cell.")
+
+    if not dead:
+        choice1 = input("What would you like to do? [look/escape]")
+        if choice1.find("look") is not -1 and not 'dead':
+            print("You see your bed, a small nightstand with a rubber duck sitting on top, and a small hole in the corner.")
+        elif choice1.find("escape") is not -1 and not 'dead':
+            print("You flail your arms through the prison cell bars screaming for attention.")
+            sleep(delay)
+            print("A guard dressed in full chain mail blazoned by the kings crest approaches you.")
+            print("What is all this raquet for?! Silence!")
+            print("He hits you over the head with his mace killing you instantly.")
+            dead = True
+
+    else:
+        print("you waste away in prison and die of boredom")
+        dead = True
+
+    if not dead:
+        choice2 = input("What will you do now? [squeak rubber ducky/pick up bedsheets]")
+        if choice2.find("squeak") is not -1 and not dead:
+            print("The sharp squeak of the small toy duck rings through the empty hall.")
+            sleep(delay)
+            print("...")
+            sleep(delay)
+            print("A guard dressed in full chain mail blazoned by the kings crest approaches you.")
+            choiced = input("What will you do? [bargain/attack]")
+            if choiced.find("bargain") is not -1 and not dead:
+                print("You give the guard your best sales pitch: 'Will you let me out for this rubber ducky?'")
+                print("The guard looks at you confused but agrees. The doors open up and you are free from the prison.")
+
+            elif choiced.find("attack") is not -1 and not dead:
+                print("you throw the small yellow duck at the guard")
+                sleep(delay)
+                sleep(delay)
+                print("The guard is furious with you and swings his mace and kills you.")
+                dead = True
+
+            else:
+                print("you waste away in prison and die of boredom")
+                dead = True
+
+        elif choice2.find("bedsheets") is not -1 and not dead:
+            print("You take the bedsheets.")
+            sleep(delay)
+            print("A guard dressed in full chain mail blazoned by the kings crest approaches you.")
+            choiceb = input("'What are you doing with those bed sheets?' What will you do? [bargain/attack]")
+            if choiceb.find("bargain") is not -1 and not dead:
+                print("You give the guard your best sales pitch: 'Will you let me out for these bed sheets?'")
+                sleep(delay)
+                print("The guard looks at you confused, 'how dare you address sir reginold the third in this way!.")
+                sleep(delay)
+                print("The guard is furious with you and swings his mace and kills you.")
+                dead = True
+
+            elif choiceb.find("attack") is not -1 and not dead:
+                print("you lasso the bedsheets around the guardsman's neck and strangle him to death")
+                sleep(delay)
+                print("The guard falls limp you take the cell key and you are free")
+
+        else:
+            print("you waste away in prison and die of boredom")
+            dead = True
+
+    else:
+        if not dead:
+            print("you waste away in prison and die of boredom")
+            dead = True
+            quit()
+
+    if dead:
+        print("you were unable to escape ye old prison rest in peace")
+        quit()
+    if not dead:
+        print("congratulations you have escaped prison")
+        quit()
+
+
 
 
 #########################################################################################################
