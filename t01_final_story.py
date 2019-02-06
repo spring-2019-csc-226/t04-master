@@ -124,16 +124,19 @@ elif path == "Center":
         dead = True
     sleep(delay)
 
+
+
+
+
+
 elif path == "Right":
     # Reward
     print("You find the sword of the Goblin King on the path and come to a waterfall, and you continue onward.")
     sleep(delay)
 
-if dead:
+if dead == True:
     print("Damn those goblins! Choose a different path and try again!")
-    quit()
-
-
+quit()
 #########################################################################################################
 # Evan, Hila, and Megan
 # Refactored by Team 3
