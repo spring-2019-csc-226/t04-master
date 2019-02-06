@@ -161,7 +161,9 @@ def team_6_adv():
 # Kenzie and Caleb
 # Refactored by Team 7:                 #TODO Team 7 names here
 # Google doc link:                      #TODO Team 7 Google doc link here
+
 def team_7_adv():
+    global dead
     print("You're walking through a jungle, looking for treasure when suddenly, something hard hits your head"
           + "and you fall to the ground.\n")
     sleep(delay * 5)
@@ -202,7 +204,8 @@ def team_7_adv():
     print("You can wait until the leader gets close and attack him and fight your way to freedom.")
     print("You can wait until everyone is asleep and then quietly make your escape.")
     print(
-        "You can tell the leader that you want to be a part of the tribe and try to figure out your escape from there.\n")
+        "You can tell the leader that you want to be a part"
+        " of the tribe and try to figure out your escape from there.\n")
     sleep(delay)
 
     option = input("Which option do you choose? [Attack/Wait/Join] ")
@@ -223,7 +226,8 @@ def team_7_adv():
         print("You quietly slip out of the ropes and creep away from the tribe")
         sleep(delay * 3)
         print(
-            "You have been walking through the jungle for hours when suddenly you run into someone...another adventurer!")
+            "You have been walking through the jungle for hours "
+            "when suddenly you run into someone...another adventurer!")
         sleep(delay)
 
     else:
@@ -242,7 +246,7 @@ def team_7_adv():
         sleep(delay * 5)
         print("You are set free, but now you have to be a part of the tribe")
 
-    if dead == True:
+    if dead:
         print("Oh!! What a horrible way to die. Better luck next time! ")
         quit()
     pass
