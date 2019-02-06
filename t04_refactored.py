@@ -255,7 +255,7 @@ def team_13_adv():
         print("You wake up several hours later and don't remember anything")
     kill_if_dead(dead)
     pass
-team_13_adv()
+
 
 #########################################################################################################
 # Nmasichi, Kabelo, and Christian
