@@ -108,7 +108,10 @@ def sample_adventure():
 # Refactored by Team 1: Hila Manalai, Roberto Santos
 # Google doc link: https://docs.google.com/document/d/1UeWIsfZeK1UmwJAz834Q7LeMMbWXNHLxYvTCuirWNU4/edit?usp=sharing
 
+
 def team_1_adv():
+
+    global dead
     print("You found yourself inside the mouth of the Mammoth Cave.")
     print("It's dark outside but you see the light inside the cave.")
 
@@ -120,7 +123,7 @@ def team_1_adv():
 
         sleep(delay)
 
-    elif direction == " follow the light":
+    elif direction == "follow the light":
         # Bad choice
         print("Hungry hungry hyenas live in this cave and you have just disturbed their sleep.")
         sleep(delay)
@@ -134,9 +137,10 @@ def team_1_adv():
         print("You got scared of your own shadow.You passed out for several hours.")
         print("After you wake up, you decide to go deeper into the cave. The adventure continues.")
 
-    if dead:
-        print("Oh, no! It was not your luck today! You died.")
-        quit()
+    # if dead == True:
+    #     print("Oh, no! It was not your luck today! You died.")
+    #     quit()
+
 
 team_1_adv()
 
