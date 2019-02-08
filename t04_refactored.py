@@ -738,6 +738,7 @@ def team_17_adv():
 # Google doc link:
 # https://docs.google.com/document/d/1RdhX6OoMjEDKT3oPqSmkpZwPORe1nIQC3vnslmjSrCM/edit?ts=5c58b1af#heading=h.f6tumop9n7at
 def team_18_adv():
+    global dead
     # prompts for a weapon choice
     print("")
     print("You  come across a dungeon armory.")
