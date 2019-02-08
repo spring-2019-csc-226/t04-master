@@ -726,11 +726,179 @@ def team_16_adv():
 
 #########################################################################################################
 # Ben and Luis
-# Refactored by Team 17:                 #TODO Team 17 names here
-# Google doc link:                       #TODO Team 17 Google doc link here
+# Refactored by Team 17: Tristan Weir, Azariah Mawoko, Wilkensley Thervil.
+# Google doc link: https://docs.google.com/document/d/14k7q9gxd21NPqNXWMXrJZ1hzWOlmyoELNKOJb_n85V8/edit?usp=sharing
 def team_17_adv():
-    pass
-    # TODO Add your code here
+    global username
+    global dead
+    # Start of our code.
+    # gets input from the user, 1 2 or 3 for simplicity. Could do rock, sword, or cave.
+    print("You appear in a cave. It is dark, and smells weird. You look around...")
+    sleep(2)
+    print(
+        "You hear a growling sound coming from deeper in the cave. \nYou see a sword, a mysterious glowing green rock.")
+    print()
+    # we can either use a loop to handle 'incorrect' choices, or an else to catch anything we didn't think of.
+
+    # get input from user, present options, and store that as a string
+
+    opt1 = input("""What would you like to do?\n 
+    1. Pick up sword to fight off the growling monster.\n
+    2. Investigate the mysterious rock.\n
+    3. Venture deeper into the cave to try to reason with the monster.\n 
+    Press 1, 2, or 3 depending on your choice, or type a command.""")
+
+    # type cast the user's input as a string, and make all characters in that string lowercase.
+    choice = str(opt1).lower()
+
+    # neutral choice
+
+    # the user can either enter 1, sword, or fight to get this option.
+    if '1' in choice or "sword" in choice or "fight" in choice:
+        print("""You pick up the sword, attempt to fight the monster, \n
+        You manage to kill the monster, but you are badly wounded in the process. You are able to continue on.""")
+        sleep(delay)
+        print("""You see a growing red flask on the ground.\n
+              Do you want to drink the strange liquid you found in a cave? Yes or No?""")
+        opt2 = str(input("What do you want to do?")).lower()
+
+        # special case, check if the user is named 'emily', or 'azis' and if so, do a special thing.
+        if 'emily' in username.lower() or 'azis' in username.lower():
+            print("A wizard changed your name. You are hereafter known only as The Old Man.")
+            username = "The Old Man"
+        # if user wants to drink the potion, or the liquid
+        elif 'drink' in opt2 or 'potion' in opt2 or 'liquid' in opt2 or 'yes' in opt2:
+            sleep(delay)
+            print("seriously?")
+            print("...")
+            sleep(delay * 2)
+            print("""You weirdo. \n 
+            You literally found that on the floor of a cave...
+            \n You drink the liquid, and it kills you.""")
+            # they died, change the variable to reflect that.
+            dead = True
+        elif 'nothing' in opt2 or 'no' in opt2:
+            sleep(delay * 3)
+            print("Good choice. \nOnly a weirdo would drink liquid they found on the floor of a cave, right?")
+            sleep(delay * 2)
+            print("RIGHT...?")
+            sleep(delay * 2)
+
+            # catch any other input here. Kill them off
+        else:
+            sleep(delay * 2)
+            print("You roll off a ledge of a hidden cliff, and die.")
+            dead = True
+    # positive choice
+    elif '2' in choice or "rock" in choice or "touch" in choice:
+        print("""You touch the magic rock, and you are teleported to a mysterious room.""")
+        sleep(delay * 2)
+        print("It is the living room of a fancy mansion.")
+        mansiontest = False
+        mansionring = False
+        mansioncheck3 = False
+        while not mansiontest:
+            print("There are 3 doors, 2 windows, and a Piano as well as some other furniture of little importance.")
+            mansionchoice = input("What would you like to do?\n [Door 1/2/3] [Window 1/2] [Piano]")
+            if 'piano' in mansionchoice.lower() and 'play' in mansionchoice.lower():
+                print("You play a tune that you didn't know you could play.\n Congrats " + username + "!!!")
+                sleep(delay)
+            elif 'piano' in mansionchoice.lower():
+                print("It is a very nice Piano!")
+                print("You should try playing it!")
+                sleep(delay)
+            elif 'door' in mansionchoice.lower() and '1' in mansionchoice.lower():
+                print("You opened door 1!!!")
+                sleep(delay * 2)
+                print("You find the owner of this mansion...")
+                print("He is not happy...")
+                sleep(delay)
+                print("He stabs you with his knife.")
+                print("You bleed out.")
+                dead = True
+                mansiontest = True
+                sleep(delay)
+            elif 'door' in mansionchoice.lower() and '2' in mansionchoice.lower():
+                print("You opened door 2!!!")
+                sleep(delay * 2)
+                print("It is another room.")
+                print("You walk in.")
+                sleep(delay)
+                print("And everything goes white.")
+                mansiontest = True
+                sleep(delay)
+            elif 'door' in mansionchoice.lower() and '3' in mansionchoice.lower():
+                print("You opened door 3!!!")
+                sleep(delay * 2)
+                print("Behind this door there is another door.")
+                print("You open that door.")
+                sleep(delay)
+                if mansionring:
+                    print("You see another room.")
+                    if mansioncheck3:
+                        print("Wait. Was this here before?!")
+                        sleep(delay)
+                    print("This room is like nothing you have seen before.")
+                    sleep(delay)
+                    print("You decide to go through.")
+                    sleep(delay)
+                    mansiontest = True
+                else:
+                    print("There is an additional door behind that door.")
+                    print("You decide to stop and close all doors you just opened.")
+                    mansioncheck3 = True
+                    sleep(delay)
+            elif 'window' in mansionchoice.lower() and '1' in mansionchoice.lower():
+                print("You look through window 1!!!")
+                sleep(delay * 2)
+                print("It is dark outside...")
+                print("Too dark to see anything...")
+                sleep(delay)
+                print("The darkness stares back at you...")
+                sleep(delay)
+                print("You witness unspeakable horrors...")
+                sleep(delay)
+                print("And you slip...")
+                sleep(delay)
+                print("Into Madness...")
+                mansiontest = True
+                dead = True
+            elif 'window' in mansionchoice.lower() and '2' in mansionchoice.lower():
+                print("You look through window 2!!!")
+                sleep(delay * 2)
+                print("It is very dark outside.")
+                print("You can't see anything.")
+                sleep(delay)
+                print("You have a feeling that there is something in the furniture.")
+                print("It is just a feeling, though.")
+                sleep(delay)
+            elif 'furniture' in mansionchoice.lower():
+                print("You check through the furniture")
+                sleep(delay * 2)
+                print("You find ring.")
+                print("It fits you perfectly!")
+                sleep(delay)
+                print("You decide to take it with you.")
+                print("It may prove useful later.")
+                sleep(delay)
+                mansionring = True
+            else:
+                print("You did nothing!")
+                print("Please try again.")
+                sleep(delay)
+    else:
+        print("""Confused, you venture deeper into the cave, and try to talk to the monster.""")
+        sleep(delay)
+        print("""Thinking the monster wanted a hug, you go in to embrace it, and it eats you.""")
+        dead = True
+
+    # at the end, check if user is dead or not.
+    if dead:
+        sleep(delay)
+        print("Sorry " + username + ".\n You have died. \n Better luck next time!")
+        # we don't need to add an else statement before the lines after this,
+        # as the "quit()" function will end the program.
+        quit()
 
 
 #########################################################################################################
