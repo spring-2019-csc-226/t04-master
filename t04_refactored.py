@@ -647,6 +647,7 @@ Please follow all safety guidelines and ...""")
             print("---")
             sleep(delay * 2)
             print("You stepped on a deadly coral snake and die.\nDavid is left to survive on the island alone.")
+            dead = True
         elif choice2 == "create sos signal":
             print("---")
             sleep(delay * 2)
@@ -657,8 +658,10 @@ Please follow all safety guidelines and ...""")
         print("~You wait a while until you are sure the person the voice belonged to is gone.~")
         sleep(delay)
         print("~You realise that you are pinned down by something big, and can't get out.\nYou die.")
+        dead = True
     else:
         print("You remain alone walking the beaches of the island.")
+    kill_if_dead(dead)
 
 
 team_15_adv()
