@@ -238,9 +238,11 @@ def team_5_adv():
 # Google doc link:                      #TODO Team 6 https://docs.google.com/document/d/1lVaSKzBsf-wlLdDJVvwkwkA6EALrBiCw4vmcJzR7BYQ/edit?usp=sharing
 def team_6_adv():
     global dead
-    direction = input("Which direction would you like to go? {South, West }")
+    direction = input("Which direction would you like to go? {South, West }").lower()
 
-    if direction == "South":
+
+    direction=direction.replace(" ","")
+    if direction == "south":
         # right choice.
         print("You locate a stream of water on the floor. Following it could lead you to the exit.")
         sleep(delay)
@@ -250,7 +252,7 @@ def team_6_adv():
         sleep(delay)
         print("...")
         sleep(delay)
-    elif direction == "East":
+    elif direction == "west":
         # Wrong choice
         print("In the darkness, you fail to see a sinkhole that you fall into, never to escape.")
         print('')
@@ -272,7 +274,6 @@ def team_6_adv():
     if dead:
         print("You are banished to the sinkhole for the rest of your days. Better luck next time!")
         quit()
-
 
 #########################################################################################################
 # Kenzie and Caleb
