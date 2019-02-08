@@ -249,8 +249,8 @@ def team_16_adv():
 
 #########################################################################################################
 # Ben and Luis
-# Refactored by Team 17:                 #TODO Team 17 names here
-# Google doc link:                       #TODO Team 17 Google doc link here
+# Refactored by Team 17: Tristan Weir, Azariah Mawoko, Wilkensley Thervil.
+# Google doc link: https://docs.google.com/document/d/14k7q9gxd21NPqNXWMXrJZ1hzWOlmyoELNKOJb_n85V8/edit?usp=sharing
 def team_17_adv():
     global username
     global dead
