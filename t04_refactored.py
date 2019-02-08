@@ -123,12 +123,12 @@ def team_2_adv():
     sleep(delay)
     path = input("Which path will you take? [Left/Center/Right]")
 
-    if path == "Left":
+    if path == "Left" or "left":
         # Neutral
         print("As you follow the path you find and pick up a stick, and you find a waterfall, and you continue onward.")
         sleep(delay)
 
-    elif path == "Center":
+    elif path == "Center" or "center":
         # Bad Choice
         choice = input("Choose a number between 1 and 10.")
         if choice == "8":
@@ -140,7 +140,7 @@ def team_2_adv():
             dead = True
         sleep(delay)
 
-    elif path == "Right":
+    elif path == "Right" or "right":
         # Reward
         print("You find the sword of the Goblin King on the path and come to a waterfall, and you continue onward.")
         sleep(delay)
