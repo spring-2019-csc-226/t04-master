@@ -203,12 +203,9 @@ def team_11_adv():
 
 
 #########################################################################################################
-# Sandesh
-# Refactored by Team 12:                 #TODO Team 12 names here
-# Google doc link:                       #TODO Team 12 Google doc link here
-
-    # Sandesh
-    # Refactored by Team 12
+# Refactored by Team 12: Darian Sanders , Mupotsa Liberty          #
+# Google doc link:   https://docs.google.com/document/d/1dAqL73MFOgS_nKfwNQ0VNPVrTO6t4HMTLZspev2JGnc/edit?usp=sharing
+# Refactored by Team 12
 def team_12_adv():
     """This function runs you through a cave. Yiu have to choose wisely so that You can get out of it. """
     global dead
