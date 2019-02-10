@@ -203,6 +203,7 @@ def team_11_adv():
 
 
 #########################################################################################################
+# Sandesh
 # Refactored by Team 12: Darian Sanders , Mupotsa Liberty          #
 # Google doc link:   https://docs.google.com/document/d/1dAqL73MFOgS_nKfwNQ0VNPVrTO6t4HMTLZspev2JGnc/edit?usp=sharing
 # Refactored by Team 12
@@ -260,20 +261,10 @@ def team_12_adv():
         print("You decide to continue on.")
         print("After a while of walking the ground begins to slop downwards.")
         print("at the bottom of te slope you see a faint light")
-        kill_if_dead(dead)
+
+    kill_if_dead(dead)
 
 
-def main():
-    start_story()
-    team_12_adv()
-
-
-main()
-
-
-
-pass
-    # TODO Add your code here
 
 
 #########################################################################################################
