@@ -137,6 +137,8 @@ def team_1_adv():
         print("You got scared of your own shadow.You passed out for several hours.")
         print("After you wake up, you decide to go deeper into the cave. The adventure continues.")
 
+    kill_if_dead(dead)
+
     # if dead == True:
     #     print("Oh, no! It was not your luck today! You died.")
     #     quit()
