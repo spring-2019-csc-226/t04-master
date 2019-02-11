@@ -141,11 +141,35 @@ def team_4_adv():
 
 #########################################################################################################
 # Jalen and Tabias
-# Refactored by Team 5:                 #TODO Team 5 names here
-# Google doc link:                      #TODO Team 5 Google doc link here
+# Refactored by Team 5:                 #Irfan Chowdhury & David Andresjin
+# Google doc link:                      #https://docs.google.com/document/d/12PBH4CiETPywPJQk_-X3OemdzimcbYkDBvMmggTphR0/edit?usp=sharing
 def team_5_adv():
-    pass
-    # TODO Add your code here
+    from time import sleep
+    print(username + "! You are facing a new decision.")
+    print("In front of you there are 3 doors. All three doors lead you to different destinations. ")
+    print("Be careful! One of the doors leave you stuck in a black hole")
+    print()
+    sleep(delay)
+    print("You are trapped in your space ship and you are running out of air.")
+    print("Don't panic, take time to think, Good luck.")
+    print()
+    sleep(delay)
+
+    direction = input("Which door do you choose? Door 1/Door 2/Door 3]? Enter the number! ")                 # Asks the player to choose a door
+    if direction == "3":
+        print("You open the door, but can't see anything. You're stuck in a black hole, you DIE!")
+        sleep(delay)
+        quit()
+
+    else:
+        print("You get out safely, Congratulations!")
+    
+    
+
+
+
+
+
 
 
 #########################################################################################################
