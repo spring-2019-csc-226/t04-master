@@ -193,41 +193,45 @@ def team_9_adv():
 
 def team_10_adv():
 
+    global dead
     global username
     print()
     print("Welcome, " + username + ",to Las Vegas.")
     sleep(delay)
-    print("We are at Omnia, a club in Las Vegas. A tall, blond, man comes in holding an AK47 gun in his right hand.")
+    print("We are at Omnia, a club in Las Vegas. You and your friends are there to party.")
     sleep(delay * 2)
-    print("Everyone is panicked, your friend Erica freaks out and decides to hide under the table.")
+    print("Omina club offers a variety of things to do.")
     sleep(delay * 2)
-    print("You are standing on the other side of the room. The door is located really close to you.")
+    print("As the designated party planner it's your responsibility to decide what activates\n"
+          " the group does.")
     print()
     sleep(delay * 2)
     print("You have 3 options")
     sleep(delay * 2)
-    print("Run Away, Hide with your friend, or Fight for your life")
+    print("You can either go to the BAR and drink together, you could also try your hand at POKER,\n "
+          "or you could SING on stage.")
     print()
     sleep(delay)
 
-    choice = input("What did you decide to do? [Run/Hide/Fight]")
-    if choice == "Run":
+    choice = input("What did you decide to do? [BAR/POKER/SING]")
+    if choice == "BAR":
         # Safe Choice
-        print('You are safe!')  # Safe option
+        print('You and your friends end up getting wasted and stumble back to the hotel at the end of the night')  # Safe option
         sleep(delay * 2)
-    elif choice == "Hide":
+    elif choice == "Poker":
         # Correct options
-        print("The story continues. You survived!")
+        print("At the end of the night everyone loses their money and you get thrown out of the club")
         sleep(delay * 2)
-    elif choice == "Fight":
+    elif choice == "SING":
         # Wrong Choice
-        print("You are dead! Sorry :( ")
+        print("On stage you got too enthusiastic and you trip on a loose wire, making you fall off the stage\n "
+              "causing you to go to the hospital.")
         dead = True
+    kill_if_dead(dead)
+    # else:
+    #     print("You were not able to do that.")
 
-    else:
-        print("You were not able to do that.")
 
-    kill_if_dead()
 
     # TODO Add your code here
 
@@ -333,6 +337,7 @@ def main():
         paths[i]()                                      # Runs each function in the paths list
 
     end_story(username)
+
 
 
 main()

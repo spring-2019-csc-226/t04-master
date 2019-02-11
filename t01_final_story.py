@@ -542,7 +542,7 @@ sleep(delay)
 Choice = input("What did you decide to do? [Run/Hide/Fight]")
 
 if Choice == "Run":
-    #Safe Choice
+    #safe choice
     print('You are safe!')  #Safe option
     sleep(delay * 2)
 elif Choice == "Hide":
