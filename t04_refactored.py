@@ -248,11 +248,59 @@ def team_3_adv():
 
 #########################################################################################################
 # Irfan and David
-# Refactored by Team 4:                 #TODO Team 4 names here
-# Google doc link:                      #TODO Team 4 Google doc link here
+# Refactored by Team 4:                 #Robert_NickyT04
+# Google doc link:                      #https://docs.google.com/document/d/1HoMOiKontWK1cz9G9xdnxNXl1sTpnSYTrorg-TJpji4/edit?usp=sharing
 def team_4_adv():
-    pass
-    # TODO Add your code here
+        # TODO Add your code here
+    global dead
+
+    username = input("Who do you think you are?")
+    print()
+    print("Welcome, " + username + ", but the place is not very welcoming")
+    sleep(2)
+
+    #print("How are you? Dizzy? Hungry? Tired? Thirsty?")
+    print("Look around, what do you see?")
+    sleep(delay)
+
+    print("Oops! I forgot to tell you that you are in a dark cave.")
+    print("To see, you need light. Get out of this place!")
+
+    sleep(delay)
+
+    print("You can choose which way to go")
+    print("Only one direction will lead you towards light, & obviously towards food & water.")
+
+    print("You should choose wisely, Right, Left, Front, or Back")
+
+    sleep(delay)
+
+    direction = input
+
+    print("So you think it is a wise decision?")
+
+    if direction == "Right":
+        print("You successfully came out of the cave. Food and water is waiting for you!")
+    elif direction == "Back":
+        print("You went even deeper inside the cave")
+        print("Did you hear that? A hissssssss!")
+        print("That is a rattle snake, and it looks agitated")
+        print("What? You tried to run?! You agitated the other snakes as well!")
+        print("The cave is full of them!")
+        print("Goodbye! You acted like the dumbest stupid")
+        dead = True
+
+
+    if direction == "Front":
+        print("That is not a way out. It is just the cave wall.")
+    if direction == "Left":
+        print("Why do you keep hitting the cave wall again and again?")
+    if dead == True:
+        print("Better luck next time!")
+
+        quit()
+
+
 
 
 #########################################################################################################
