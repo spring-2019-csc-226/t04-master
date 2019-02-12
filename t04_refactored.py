@@ -1039,11 +1039,107 @@ def team_17_adv():
 
 #########################################################################################################
 # Minh and Taran
-# Refactored by Team 18:                 #TODO Team 18 names here
-# Google doc link:                       #TODO Team 18 Google doc link here
+# Refactored by Team 18: Luis and Tabias
+# Google doc link:
+# https://docs.google.com/document/d/1RdhX6OoMjEDKT3oPqSmkpZwPORe1nIQC3vnslmjSrCM/edit?ts=5c58b1af#heading=h.f6tumop9n7at
 def team_18_adv():
-    pass
-    # TODO Add your code here
+    global dead
+    # prompts for a weapon choice
+    print("")
+    print("You  come across a dungeon armory.")
+    print("The door behinds you lock behinds you as the one in front of you opens. \n")
+    print("What weapon would you like to use from the armory?")
+    print("1. Sword")
+    print("2. Staff")
+    print("3. Bow and Arrow")
+    print("4. Bare hands")
+    choice_1 = input()
+    if choice_1 == "1" or "sword" in choice_1.lower():
+        print("You got an iron sword!!")
+        print("You see yourself as a knight")
+    elif choice_1 == "2" or "staff" in choice_1.lower():
+        print("You got a wooden staff")
+        print("You feel dark magic around you")
+    elif choice_1 == "3" or "bow and arrow" in choice_1.lower():
+        print("You got a bow and 20 arrows")
+        print("You feel weird carrying the bow?")
+    elif choice_1 == "4" or "bare hands" in choice_1.lower():
+        print("You feel weaker than before")
+    else:
+        print("You are kidding me, right? You want that?")
+        print("The story teller killed you!!!")
+        dead = True
+        kill_if_dead(dead)
+
+    choice_2 = input("""You entered the dungeon\nThere are 2 doors
+One to the left and one to the right\nWhere will you go?""")
+    # tracks if the player has run through this before
+    attempt = 0
+    while attempt == 0 or 1:
+        # fight against the dark wizard
+        if "left" in choice_2.lower():
+            print("You encounter the dark wizard")
+            print("What are you going to do?")
+            print("1. Hit\n2. Technique")
+            if attempt == 0:
+                print("3. Run")
+            fight = input()
+            if fight == '1' or "hit" in fight.lower():
+                print("He threw a thunderbolt")
+                print("You fried a bit")
+                if choice_1 == '1' or "sword" in choice_1.lower():
+                    print("You swing your sword. Cutting him in half")
+                elif choice_1 == '2' or "staff" in choice_1.lower():
+                    print("You beat him continuously with your staff")
+                elif choice_1 == '3'or "bow and arrow" in choice_1.lower():
+                    print("You shoot an arrow straight into his heart")
+                    print("Sadly you aren't cupid")
+                    sleep(delay)
+                elif choice_1 == '4' or "bare hands" in choice_1.lower():
+                    print("You punch him to death")
+                    print("Who feels weak now?!")
+                print("He is dead")
+                print("A chest appears in front of you")
+                print("You open it\nGold coming out\nYou're rich!")
+                # code that ends the run by killing the wizard
+                # print("You escape the dungeon and live a happily ever after.\nYou died because of old age.")
+                # dead = True
+                # kill_if_dead(dead)
+            elif fight == '2' or "technique" in fight.lower():
+                print("You perform your move in front of him\n He gets mad")
+                print("He uses his staff to whack your head")
+                dead = True
+                kill_if_dead(dead)
+            elif attempt == 0 and fight == "3" or "run" in fight.lower():
+                print("You run back to the other room")
+                attempt + 1
+                choice_2 = "right"
+            else:
+                print("You are kidding me, right? You want that?")
+                print("The story teller killed you!!!")
+                dead = True
+                kill_if_dead(dead)
+        # encounter dragon woman
+        elif "right" in choice_2.lower():
+            print("You see a beautiful woman sitting on a bed")
+            print("1. Hit\n2. Technique")
+            if attempt == 0:
+                print("3. Run")
+            fight = input()
+            if fight != "3" or "run" not in fight.lower() or attempt != 0:
+                print("She turns into a dragon and eats you")
+                print("You died")
+                dead = True
+                kill_if_dead(dead)
+            else:
+                print("You run back to the other room")
+                attempt = attempt + 1
+                choice_2 = "left"
+        else:
+            print("You are kidding me, right? You want that?")
+            print("The story teller killed you!!!")
+            dead = True
+            kill_if_dead(dead)
 
 
 #########################################################################################################
