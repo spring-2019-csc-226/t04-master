@@ -145,7 +145,7 @@ def team_4_adv():
 # Google doc link:                      #https://docs.google.com/document/d/12PBH4CiETPywPJQk_-X3OemdzimcbYkDBvMmggTphR0/edit?usp=sharing
 def team_5_adv():
     from time import sleep
-    print(username + "! You are facing a new decision.")
+    print( username + "! You are facing a new decision.")
     print("In front of you there are 3 doors. All three doors lead you to different destinations. ")
     print("Be careful! One of the doors leave you stuck in a black hole")
     print()
