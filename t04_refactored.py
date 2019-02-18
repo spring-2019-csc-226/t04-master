@@ -146,11 +146,42 @@ def team_1_adv():
 
 #########################################################################################################
 # Darian and Alex
-# Refactored by Team 2:                 #TODO Team 2 names here
-# Google doc link:                      #TODO Team 2 Google doc link here
+# Refactored by Team 2: Taran Wells and Karmadri Santiago
+# Google doc link: https://docs.google.com/document/d/1M3OJOQiKxbe_57SM0niqnfJTS22-_3byPeFv1AE3FKM/edit?usp=sharing
 def team_2_adv():
-    pass
-    # TODO Add your code here
+    """Pesky Goblin Mission"""
+    global dead
+    print("You are in a dark cave. You decide to move further into the cave, and you notice a fork into three paths.")
+    sleep(delay)
+    path = input("Which path will you take? [Left/Center/Right]")
+
+    if path == "Left" or "left":
+        # Neutral
+        print("As you follow the path you find and pick up a stick, and you find a waterfall, and you continue onward.")
+        sleep(delay)
+
+    elif path == "Center" or "center":
+        # Bad Choice
+        choice = input("Choose a number between 1 and 10.")
+        if choice == "8":
+            print("You have bested me in the game of numbers, mortal.")
+            print("You find a waterfall up ahead, and continue onward.")
+        else:
+            print("You have chosen incorrectly, foolish mortal.")
+            print("You find yourself cornered as 50 goblins jump and attack. You die!")
+            dead = True
+        sleep(delay)
+
+    elif path == "Right" or "right":
+        # Reward
+        print("You find the sword of the Goblin King on the path and come to a waterfall, and you continue onward.")
+        sleep(delay)
+
+    if dead:
+        print("Damn those goblins! Choose a different path and try again!")
+        quit()
+
+
 
 
 #########################################################################################################
